@@ -34,9 +34,9 @@ def predict_email_country(email_address, model, label_encoders):
     return predictions_dict
 
 
-st.title('Email Address Prediction App')
+st.title('Auto Fields Suggestion')
 
-email_address = st.text_input("Enter your email address:", "")
+email_address = st.text_input("Enter testing email address:", "")
 
 if st.button('Predict') and email_address:
     predictions = predict_email_country(email_address, model, label_encoders)
